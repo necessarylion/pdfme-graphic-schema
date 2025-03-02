@@ -1,0 +1,62 @@
+# Source
+src/
+tests/
+__tests__/
+*.test.ts
+*.spec.ts
+
+# Development configs
+.github/
+.vscode/
+.idea/
+.editorconfig
+.eslintrc*
+.prettierrc*
+.travis.yml
+.gitlab-ci.yml
+.circleci/
+jest.config.js
+tsconfig.json
+rollup.config.mjs
+.gitignore
+.npmignore
+
+# Development tools
+coverage/
+.nyc_output/
+.husky/
+.commitlintrc.json
+.eslintcache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment
+.env*
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tgz
+.cache/
+.parcel-cache/
+docs/
+examples/
+CHANGELOG.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md 
+!dist
