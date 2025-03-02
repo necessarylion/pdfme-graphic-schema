@@ -5,6 +5,14 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/necessarylion/pdfme-graphic-schema.git"
+  },
+  "bugs": {
+    "url": "https://github.com/necessarylion/pdfme-graphic-schema/issues"
+  },
+  "homepage": "https://github.com/necessarylion/pdfme-graphic-schema#readme",
   "files": [
     "dist"
   ],
@@ -25,7 +33,10 @@
     "prepare": "npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "necessarylion",
+    "url": "https://github.com/necessarylion"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
