@@ -107,7 +107,7 @@ const imageSchema: Plugin<ImageSchema> = {
 
     // image tag
     if (value) {
-      let src = isPdf(value) ? await pdfToImage(arg) : value;
+      const src = isPdf(value) ? await pdfToImage(arg) : value;
       const img = document.createElement('img');
       const imgStyle: CSS.Properties = {
         height: '100%',

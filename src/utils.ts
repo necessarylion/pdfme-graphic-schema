@@ -159,7 +159,7 @@ export const readFile = (input: File | FileList | null): Promise<string | ArrayB
       }
     };
 
-    fileReader.onerror = (e) => {
+    fileReader.onerror = () => {
       reject(new Error('[@pdfme/schemas] File reading failed'));
     };
 

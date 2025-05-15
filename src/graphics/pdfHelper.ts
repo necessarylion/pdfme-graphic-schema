@@ -1,4 +1,4 @@
-import { Schema, UIRenderProps } from '@pdfme/common';
+import { UIRenderProps } from '@pdfme/common';
 import { getCacheKey } from './cacheKey';
 import { ImageSchema } from './image';
 
@@ -41,21 +41,4 @@ export const pdfToImage = async ({
 
   _cache.set(pdfImageCacheKey, image);
   return image;
-};
-
-/**
- * convert canvas to blob url
- * @param canvas
- */
-const _canvasToObjectUrl = async (canvas: HTMLCanvasElement): Promise<string> => {
-  return new Promise((resolve, reject) => {
-    canvas.toBlob(function (blob) {
-      if (!blob) {
-        reject('inavlid canvas');
-      } else {
-        const url = URL.createObjectURL(blob);
-        resolve(url);
-      }
-    });
-  });
 };
