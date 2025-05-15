@@ -1,6 +1,6 @@
 # pdfme-graphic-schema
 
-A TypeScript package that supports both browser and Node.js environments.
+pdfme-graphic-schema is a package that provides a schema for defining and rendering graphics (image, svg, pdf) in PDF documents using the pdfme library.
 
 ## Installation
 
