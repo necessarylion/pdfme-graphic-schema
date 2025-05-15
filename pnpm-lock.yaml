@@ -12,8 +12,8 @@ importers:
         specifier: ^5.2.5
         version: 5.2.5(antd@5.25.1(react-dom@16.14.0(react@19.1.0))(react@19.1.0))(form-render@2.5.2(@types/react@19.1.4)(antd@5.25.1(react-dom@16.14.0(react@19.1.0))(react@19.1.0))(react-dom@16.14.0(react@19.1.0))(react@19.1.0))
       '@pdfme/pdf-lib':
-        specifier: ^1.18.4
-        version: 1.18.4
+        specifier: ^1.18.3
+        version: 1.18.3
       fast-xml-parser:
         specifier: ^5.2.3
         version: 5.2.3
@@ -437,8 +437,8 @@ packages:
       antd: ^5.11.2
       form-render: ^2.2.20
 
-  '@pdfme/pdf-lib@1.18.4':
-    resolution: {integrity: sha512-i9XGkKCCb2wHLfJC/wUZ221/58o4unG4dGvnS+Tk8kOQBVMf+DCXzIqs0SGDsF3DrEpXHIhaW2iscWNjM0qNtA==}
+  '@pdfme/pdf-lib@1.18.3':
+    resolution: {integrity: sha512-Zy4lRrxhDo7pbexNCvn+nzO5gLRc1XOXQyFOHC1FJoaHzrZ3GDd4OZwR5AaGIlCwV7ocPP2+iiLFA5wQcx3s9w==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -2897,14 +2897,14 @@ snapshots:
 
   '@pdfme/common@5.2.5(antd@5.25.1(react-dom@16.14.0(react@19.1.0))(react@19.1.0))(form-render@2.5.2(@types/react@19.1.4)(antd@5.25.1(react-dom@16.14.0(react@19.1.0))(react@19.1.0))(react-dom@16.14.0(react@19.1.0))(react@19.1.0))':
     dependencies:
-      '@pdfme/pdf-lib': 1.18.4
+      '@pdfme/pdf-lib': 1.18.3
       acorn: 8.14.1
       antd: 5.25.1(react-dom@16.14.0(react@19.1.0))(react@19.1.0)
       buffer: 6.0.3
       form-render: 2.5.2(@types/react@19.1.4)(antd@5.25.1(react-dom@16.14.0(react@19.1.0))(react@19.1.0))(react-dom@16.14.0(react@19.1.0))(react@19.1.0)
       zod: 3.24.4
 
-  '@pdfme/pdf-lib@1.18.4':
+  '@pdfme/pdf-lib@1.18.3':
     dependencies:
       '@pdf-lib/standard-fonts': 1.0.0
       '@pdf-lib/upng': 1.0.1
