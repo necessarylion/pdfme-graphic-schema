@@ -27,21 +27,8 @@ jobs:
     - uses: pnpm/action-setup@v2
       name: Install pnpm
       with:
-        version: 8
+        version: 10.6.3
         run_install: false
-
-    - name: Get pnpm store directory
-      shell: bash
-      run: |
-        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-    - uses: actions/cache@v3
-      name: Setup pnpm cache
-      with:
-        path: ${{ env.STORE_PATH }}
-        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-pnpm-store-
     
     - name: Install dependencies
       run: pnpm install
@@ -55,11 +42,3 @@ jobs:
     - name: Run tests
       run: pnpm run test
     
-    - name: Upload coverage reports
-      uses: codecov/codecov-action@v3
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        files: ./coverage/lcov.info
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: false 

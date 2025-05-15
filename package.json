@@ -56,6 +56,7 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "packageManager": "pnpm@10.6.3",
   "dependencies": {
     "@pdfme/common": "^5.2.5",
     "@pdfme/pdf-lib": "^1.18.4",
