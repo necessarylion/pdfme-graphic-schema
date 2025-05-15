@@ -1,8 +1,7 @@
-/**
- * Example function to demonstrate the package works in both Node.js and browser environments
- */
-export function greet(name: string): string {
-  return `Hello, ${name}!`;
-}
+import image from './graphics/image';
+import svg from './graphics/svg';
 
-// Add more exports here as needed 
+export {
+  image,
+  svg,
+};
