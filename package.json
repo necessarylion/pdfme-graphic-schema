@@ -1,6 +1,6 @@
 {
   "name": "pdfme-graphic-schema",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "A TypeScript package supporting both browser and Node.js environments",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
