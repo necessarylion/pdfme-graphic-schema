@@ -30,8 +30,6 @@ export const pdfToImage = async ({
   canvas.height = viewport.height;
   const canvasContext = canvas.getContext('2d')!;
 
-  console.log('hello')
-
   await page.render({ 
     canvasContext, 
     viewport,
