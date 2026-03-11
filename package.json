@@ -1,6 +1,6 @@
 {
   "name": "pdfme-graphic-schema",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0",
   "description": "A TypeScript package supporting both browser and Node.js environments",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -58,8 +58,10 @@
   },
   "packageManager": "pnpm@10.6.3",
   "dependencies": {
-    "@pdfme/common": "^5.2.5",
-    "@pdfme/pdf-lib": "^1.18.3",
+    "@pdfme/common": "^5.5.8",
+    "@pdfme/converter": "^5.5.8",
+    "@pdfme/pdf-lib": "^5.5.8",
+    "pdfjs-dist": "^3.11.174",
     "fast-xml-parser": "^5.2.3",
     "lucide": "^0.510.0"
   }
