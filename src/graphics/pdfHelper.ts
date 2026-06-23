@@ -1,7 +1,7 @@
 import { UIRenderProps } from '@pdfme/common';
 import { getCacheKey } from './cacheKey';
 import { ImageSchema } from './image';
-import * as pdfJs from 'pdfjs-dist/legacy/build/pdf';
+import * as pdfJs from 'pdfjs-dist';
 
 export function isPdf(content: string): boolean {
   return content.startsWith('data:application/pdf;');
@@ -30,8 +30,9 @@ export const pdfToImage = async ({
   canvas.height = viewport.height;
   const canvasContext = canvas.getContext('2d')!;
 
-  await page.render({ 
-    canvasContext, 
+  await page.render({
+    canvas,
+    canvasContext,
     viewport,
     background: 'rgba(0,0,0,0)',
   }).promise;
